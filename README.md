@@ -1,180 +1,140 @@
-# Golden Eye Security - WordPress Theme
+# Golden Eye Security WordPress Theme
 
-A professional, fully responsive WordPress theme for Golden Eye Security, a security services company. This theme features a modern design, comprehensive contact forms, and custom page templates for all company services.
+A custom WordPress theme I built for Golden Eye Security, a security services company. This theme includes custom page templates, contact forms with bot protection, and a fully responsive design that works great on mobile and desktop.
 
-## 🌐 Live Demo
+## Live Demo
 
-**Website URL:** [https://near-duck.localsite.io](https://near-duck.localsite.io)
+You can check out the live site here: [https://near-duck.localsite.io](https://near-duck.localsite.io)
 
-**WordPress Admin Login:**
-- **Username:** `00000`
-- **Password:** `11111`
-- **Admin URL:** [https://near-duck.localsite.io/wp-admin](https://near-duck.localsite.io/wp-admin)
+**WordPress Admin:**
+- URL: [https://near-duck.localsite.io/wp-admin](https://near-duck.localsite.io/wp-admin)
+- Username: `00000`
+- Password: `11111`
 
-## ✨ Features
+## What It Does
 
-- **Fully Responsive Design** - Mobile-first approach with smooth animations
-- **Custom Page Templates** - Dedicated templates for all service pages
-- **Contact Form with Bot Protection** - Math CAPTCHA and honeypot field
-- **Regional Office Information** - Multi-location contact details
-- **Service Selection Forms** - Comprehensive checkbox selection for services
-- **Professional Security Aesthetic** - Modern design with security-focused branding
-- **WordPress Best Practices** - Clean code, proper hooks, and security measures
+This theme provides a complete website solution for Golden Eye Security with:
 
-## 📁 Project Structure
+- **Custom page templates** for all their service pages (Contact, Training, Compliance, Infrastructure, etc.)
+- **Contact forms** with math CAPTCHA and honeypot fields to prevent spam
+- **Regional office information** displayed on the contact page
+- **Mobile-responsive navigation** with a slide-in menu for better mobile UX
+- **Professional design** that fits a security company's brand
 
-```
-golden-eye-security/
-├── assets/
-│   └── images/
-│       ├── golden-eye-logo.png
-│       └── saidsa-logo.png
-├── template-parts/
-│   ├── content-home.php
-│   ├── content-page.php
-│   └── content-none.php
-├── js/
-│   └── theme.js
-├── style.css
-├── functions.php
-├── header.php
-├── footer.php
-├── index.php
-├── front-page.php
-├── page.php
-├── single.php
-├── 404.php
-├── page-contact.php
-├── page-request-quote.php
-├── page-equity.php
-├── page-compliance-qc.php
-├── page-training.php
-├── page-infrastructure.php
-└── page-products-services.php
-```
+## Tech Stack
 
-## 🚀 Installation
+- WordPress (custom theme)
+- PHP for server-side logic and form handling
+- HTML5 with semantic markup
+- CSS3 with custom properties, flexbox, and grid
+- Vanilla JavaScript for interactive features
+- Google Fonts (Inter)
 
-1. **Clone the repository:**
+## Getting Started
+
+1. Clone the repo:
    ```bash
-   git clone https://github.com/Louis121710/golden-eye-security.git
+   git clone https://github.com/Louis121710/Golden-eye-WordPress.git
    ```
 
-2. **Navigate to WordPress themes directory:**
-   ```bash
-   cd wp-content/themes/
-   ```
-
-3. **Copy the theme folder:**
+2. Copy the theme to your WordPress installation:
    ```bash
    cp -r golden-eye-security /path/to/wordpress/wp-content/themes/
    ```
 
-4. **Activate the theme:**
-   - Log into WordPress admin
-   - Go to **Appearance → Themes**
-   - Find "Golden Eye Security" and click **Activate**
+3. Activate the theme in WordPress admin under **Appearance → Themes**
 
-5. **Set up pages:**
-   - The theme will automatically create required pages on activation
-   - Or manually create pages and assign templates from **Page Attributes**
+4. The theme will automatically create the necessary pages when activated, or you can create them manually and assign templates from the page attributes.
 
-## 🎨 Customization
+## Project Structure
 
-### Changing Colors
+```
+golden-eye-security/
+├── assets/images/          # Logo files
+├── template-parts/         # Reusable template components
+├── js/                     # JavaScript files
+├── style.css               # Main stylesheet
+├── functions.php           # Theme functions and hooks
+├── header.php              # Site header
+├── footer.php              # Site footer
+├── front-page.php          # Homepage template
+├── page-contact.php        # Contact page template
+├── page-equity.php         # Equity page template
+├── page-training.php       # Training page template
+└── ... (other page templates)
+```
 
-Edit CSS variables in `style.css`:
+## Features
 
+### Custom Page Templates
+Each service page has its own template with custom layouts:
+- Contact page with regional offices and contact form
+- Training page with course listings
+- Compliance & QC page with certification details
+- Infrastructure page with operational capabilities
+- Products & Services page with service offerings
+- Equity page with ownership information
+
+### Form Handling
+- Contact form with validation and sanitization
+- Quote request form
+- Math CAPTCHA for bot protection
+- Honeypot field as additional spam prevention
+- Email notifications sent to admin
+
+### Responsive Design
+- Mobile-first approach
+- Slide-in navigation menu for mobile
+- Responsive typography and spacing
+- Touch-friendly buttons and links
+
+## Customization
+
+### Colors
+Edit the CSS variables in `style.css`:
 ```css
 :root {
     --primary-color: #0d2d47;
     --secondary-color: #d4af37;
     --accent-color: #c41e3a;
-    /* ... */
 }
 ```
 
-### Adding Menu Items
+### Menus
+Create menus in **Appearance → Menus** and assign them to the "Primary Menu" or "Footer Menu" locations.
 
-1. Go to **Appearance → Menus**
-2. Create or edit your menu
-3. Assign to "Primary Menu" location
+### Logo
+Upload a logo in **Appearance → Customize → Site Identity**, or place logo files in the `assets/images/` folder.
 
-### Logo Upload
+## Security Features
 
-1. Go to **Appearance → Customize → Site Identity**
-2. Upload your logo
-3. Or place logo files in `assets/images/` folder
+- WordPress nonces for form security
+- Input sanitization on all user inputs
+- Output escaping to prevent XSS
+- Server-side email validation
+- Bot protection with CAPTCHA and honeypot
 
-## 📝 Page Templates
+## Browser Support
 
-- **Contact Page** (`page-contact.php`) - Full contact form with regional offices
-- **Request Quote** (`page-request-quote.php`) - Quote request form
-- **Equity** (`page-equity.php`) - Company ownership information
-- **Compliance & QC** (`page-compliance-qc.php`) - Compliance details
-- **Training** (`page-training.php`) - Training programs
-- **Infrastructure** (`page-infrastructure.php`) - Company infrastructure
-- **Products & Services** (`page-products-services.php`) - Service listings
-
-## 🔒 Security Features
-
-- **Nonce Verification** - All forms use WordPress nonces
-- **Input Sanitization** - All user inputs are sanitized
-- **Bot Protection** - Math CAPTCHA and honeypot field
-- **Email Validation** - Server-side email validation
-- **XSS Prevention** - Proper escaping of all outputs
-
-## 🛠️ Technologies Used
-
-- **WordPress** - CMS Framework
-- **PHP** - Server-side scripting
-- **HTML5** - Semantic markup
-- **CSS3** - Modern styling with Flexbox/Grid
-- **JavaScript (ES6)** - Interactive functionality
-- **Google Fonts** - Inter font family
-
-## 📱 Browser Support
-
+Tested and working on:
 - Chrome (latest)
 - Firefox (latest)
 - Safari (latest)
 - Edge (latest)
 - Mobile browsers (iOS Safari, Chrome Mobile)
 
-## 👨‍💻 Development
+## Development Notes
 
-### Code Standards
+I followed WordPress coding standards and best practices throughout. The code is organized with clear separation of concerns - templates in the root, reusable parts in `template-parts/`, and assets in their respective folders.
 
-- WordPress Coding Standards
-- PSR-12 PHP coding style
-- Semantic HTML5
-- BEM-inspired CSS methodology
-- ES6 JavaScript
+The theme uses WordPress hooks properly (`wp_enqueue_scripts`, `after_setup_theme`, etc.) and follows the template hierarchy. All forms include proper security measures and validation.
 
-### File Organization
+## License
 
-- **Templates** - Page-specific templates in root
-- **Template Parts** - Reusable components in `template-parts/`
-- **Assets** - Images, fonts, and media in `assets/`
-- **JavaScript** - Custom scripts in `js/`
+Proprietary - Developed for Golden Eye Security
 
-## 📄 License
-
-This project is proprietary software developed for Golden Eye Security.
-
-## 👤 Author
+## Author
 
 **Louis Venter**
 
 - GitHub: [@Louis121710](https://github.com/Louis121710)
-- Portfolio: [Your Portfolio URL]
-- LinkedIn: [Your LinkedIn URL]
-
-## 🙏 Acknowledgments
-
-- WordPress Community
-- Golden Eye Security for the project opportunity
-
----
-
-**Note:** This theme was developed as a custom solution for Golden Eye Security. All code follows WordPress best practices and security guidelines.
