@@ -4,10 +4,10 @@ A custom WordPress theme I built for Golden Eye Security, a security services co
 
 ## Live Demo
 
-You can check out the live site here: [https://near-duck.localsite.io](https://near-duck.localsite.io)
+You can check out the live site here: [[famous-observation.localsite.io](https://famous-observation.localsite.io)](famous-observation.localsite.io)
 
 **WordPress Admin:**
-- URL: [https://near-duck.localsite.io/wp-admin](https://near-duck.localsite.io/wp-admin)
+- URL: [https://famous-observation.localsite.io](famous-observation.localsite.io)
 - Username: `00000`
 - Password: `11111`
 
