@@ -2,15 +2,6 @@
 
 A custom WordPress theme I built for Golden Eye Security, a security services company. This theme includes custom page templates, contact forms with bot protection, and a fully responsive design that works great on mobile and desktop.
 
-## Live Demo
-
-You can check out the live site here: [[famous-observation.localsite.io](https://famous-observation.localsite.io)](famous-observation.localsite.io)
-
-**WordPress Admin:**
-- URL: [https://famous-observation.localsite.io](famous-observation.localsite.io)
-- Username: `00000`
-- Password: `11111`
-
 ## What It Does
 
 This theme provides a complete website solution for Golden Eye Security with:
